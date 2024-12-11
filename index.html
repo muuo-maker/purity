@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Purity Wayua Professional Portfolio</title>
+    <script src="https://kit.fontawesome.com/48dac2d1b2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+        <nav>
+         <p class="logo"><span>P</span>urity.</p>   
+         <ul id="sidemenu">
+            <li><a href="#header ">Home</a></li>
+            <li><a href="#about ">About</a></li>
+            <li><a href="#services ">Services</a></li>
+            <li><a href="#contact ">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+         </ul>
+         <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="head-text">
+            <p>Civil Engineer </p>
+            <h1>Hi, I'm <span>Purity</span> Wayua</h1>
+        </div>
+    </div>
+  </div>
+ <!-------about------>
+  <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col1">
+                <img src="images/WhatsApp Image 2024-12-11 at 14.00.36.jpeg">
+            </div>
+            <div class="about-col2">
+                <h1 class="sub-title">About Me</h1>
+                <p>My area of expertise as a civil engineer is designing and overseeing the construction of durable and efficient infrastructure. My proficiency in structural analysis, project management, and CAD software allows me to create safe and sustainable designs. My portfolio includes a variety of projects that showcase my ability to blend functionality and innovation, from resilient bridges to energy-efficient buildings. I'm eager to apply my skills and expertise to a new position where I can contribute to impactful projects and support organizational goals.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="experience">
+                    <ul>
+                        <li><span>GEO CON LIMITED</li>
+                        <li><span>ATTACHED IN A MATERIAL LAB</li>
+                        <li><span>January 2023 – April 2023</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2018-2023</span><br>TECHNICAL UNIVERSITY OF MOMBASA</li>
+                        <li><span>2014-2018</span><br>Kisau Girls High School</li>
+                        <li><span>2005-2013</span><br>The Kenjoy School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!----services-->
+  <div id="services">
+    <div class="container">
+        <h1 class="sub-title">What I Do</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-building"></i>
+                <h2>Structural Design</h2>
+                <p>I design safe, durable, and efficient structures, ensuring compliance with industry standards and environmental considerations.</p>
+                <a href="https://www.linkedin.com/in/purity-wayua-84a371341?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-road"></i>
+                <h2>Project Management</h2>
+                <p>I oversee construction projects from start to finish, managing resources, timelines, and quality to deliver successful outcomes.</p>
+                <a href="https://www.linkedin.com/in/purity-wayua-84a371341?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-drafting-compass"></i>
+                <h2>Site Inspections</h2>
+                <p>I conduct detailed site inspections to ensure projects meet design specifications, safety standards, and regulatory requirements.</p>
+                <a href="https://www.linkedin.com/in/purity-wayua-84a371341?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Learn more</a>
+            </div>
+        </div>
+    </div>   
+  </div>
+  <!--portfolio-->
+ 
+<!--------contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Get In Touch</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>Pwayua7@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>0748875371</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/purity-wayua-84a371341?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+
+                </div>
+                <a href="images/PURITY WAYUA_CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Brian. Made by muuo</p>
+    </div>
+</div>
+
+
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0"
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px"
+    }
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwhYyKIAzhW_aiiB5ZX6MU-VcZqokN82vXEX3JX2SCsYYlbYClGbR2SjXwkddmA_35D/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
